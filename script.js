@@ -46,7 +46,7 @@ gear.addEventListener('click', () => {
 
 })
 
-// Доюавление нулей минутам и секундам
+// Добавление нулей к минутам и секундам
 function addZero() {
   if (seconds.value.length < 2) {
     seconds.value = `0${seconds.value}`
