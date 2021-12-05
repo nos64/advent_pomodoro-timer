@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/bebasneue-book-webfont.woff") format('woff2'),
+      url("./fonts/bebasneue-book-webfont.woff2") format('woff');
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2B2A30;
+}
+
+.timer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: -5px 14px 44px #000000, 5px -16px 50px rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+} 
+
+.ecllipse-first {
+  position: absolute;
+  top: 8px;
+  right: 9px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(71.4% 71.4% at 51.7% 28.6%, #3A393F 0%, #17171A 100%);
+  box-shadow: inset 0px 0px 114px rgba(0, 0, 0, 0.45);
+}
+.ecllipse-second {
+  width: 518px;
+  height: 518px;
+  border-radius:50%;
+  background-color: #000000;
+  box-shadow: -5px 14px 44px #000000, 5px -16px 50px rgba(255, 255, 255, 0.15);
+}
+.ecllipse-third {
+  background-image: url(/images/red.png);
+  width: 518px;
+  height: 518px;
+}
+
+.ecllipse-third-edit {
+  background-image: url(/images/green.png);
+}
+
+.time {
+  display: flex;
+  font-family: "Bebas Neue";
+  font-size: 196px;
+  line-height: 196px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #FFF;
+  margin-bottom: 50px;
+}
+.minutes{
+  position: absolute;
+  left: 90px;
+}
+
+.seconds{
+  position: absolute;
+  right: 90px;
+}
+
+.minutes, .seconds {
+  max-width: 150px;
+  background-color: transparent;
+  border: none;
+  font-family: "Bebas Neue";
+  font-size: 196px;
+  line-height: 196px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #FFF;
+  outline:none;
+}
+
+.time-edit {
+  display: flex;
+  border-bottom: 1px dashed #FFFFFF;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+/* Для Firefox */
+input[type=number]{
+  -moz-appearance: textfield;
+}
+
+
+.start-stop-btn {
+  position: absolute;
+  bottom: 70px;
+  background-color: transparent;
+  border: none;
+  height: 28px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.6em;
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 23px;
+  margin-bottom: 23px;
+  cursor: pointer;
+}
+
+.start-stop-btn-text {
+  display: block;
+}
+.start-stop-btn-text-edit {
+  display: none;
+}
+
+.gear {
+  position: absolute;
+  bottom: 50px;
+  background-image: url(/images/gear.svg);
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.gear-edit {
+  background-image: url(/images/check.svg);
+}
